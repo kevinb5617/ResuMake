@@ -14,7 +14,7 @@ Please put some high-level description of what you did to solve the bug or imple
 
 Please put clear step-by-step instructions on how to recreate the bug and verify a working solution. If you are merging a new feature, make sure you include instructions for how to see the new capabilities enabled by your code.
 
-Example:
+## Example for Bugfix
 
 ### Recreate Bug
 
@@ -27,8 +27,15 @@ Example:
 
 1. `git checkout bugfix/fix_XYZ_button`
 2. `make start_website`
-3. Navigate to localhost:5555 in your browser of choice
+3. Navigate to localhost:5555 in your browser of choice.
 4. Now the XYZ button should work as expected.
+
+## Example for Feature
+
+1. `git checkout feature/add_XYZ_button`
+2. `make start_website`
+3. Navigate to localhost:5555 in your browser of choice.
+4. You should see the new XYZ button that functions as described in the issue.
 
 # Known Issues
 
@@ -45,4 +52,4 @@ Example:
 * [ ] I have added tests that prove my fix is effective or that my feature works
 * [ ] New and existing unit tests pass locally with my changes
 * [ ] Any dependent changes have been merged and published in downstream modules
-* [ ] I have rebased my branch to master, and squashed down small commits into a few meaningful messages
+* [ ] I have rebased my branch onto master, and squashed down small commits into a few meaningful messages
