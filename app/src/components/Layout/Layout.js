@@ -3,13 +3,19 @@ import React from 'react';
 import classes from './Layout.module.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 
-const layout = ( props ) => (
-    <React.Fragment>
-        <Toolbar/>
-        <main className={classes.Content}>
-            {props.children}
-        </main>
-    </React.Fragment>
-);
+class Layout extends React.Component{
+    clicked() {
+        alert("clicked");
+    }
+    render() {
+        return(
+            <React.Fragment>
+                <Toolbar/>
+                <button onClick={() => this.clicked("clicked") } className={classes.Btn}>click</button>
+            </React.Fragment>
+        );
+    }
 
-export default layout;
+};
+
+export default Layout;
