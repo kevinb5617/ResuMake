@@ -11,7 +11,7 @@ class Layout extends React.Component{
         return(
             <React.Fragment>
                 <Toolbar/>
-                <button onClick={() => this.clicked("clicked") } className={classes.Btn}>click</button>
+                <button onClick={() => this.clicked("clicked") } className={classes.StartBtn}>get started</button>
             </React.Fragment>
         );
     }
