@@ -10,4 +10,4 @@ const Toolbar = () => {
     )
 }
 
-export default Toolbar
+export default Toolbar;

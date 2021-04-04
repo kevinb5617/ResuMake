@@ -1,10 +1,10 @@
 .Logo {
-    padding: 8px;
+    padding: 0px;
     height: 100%;
 
 }
 
-.Logo img{
+.Logo img {
     height: 100%;
-    width: 100%;
+    width: auto;
 }
