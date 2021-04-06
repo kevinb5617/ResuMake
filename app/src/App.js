@@ -1,11 +1,29 @@
 /* eslint-disable react/jsx-filename-extension */
 import './App.css'
-import Layout from './components/Layout/Layout'
+import Homepage from './components/Homepage/Homepage'
+import Toolbar from './components/Navigation/Toolbar/Toolbar'
+import SelectPages from './components/SelectPages/SelectPages'
 
-const App = () => (
-  <div>
-    <Layout />
-  </div>
-)
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+
+
+const App = () => {
+  return (
+    <>
+      <Toolbar />
+      <Router>
+        <Route
+          path='/'
+          exact
+          component={Homepage}
+        />
+        <Route
+          path='/select-pages'
+          component={SelectPages}
+        />
+      </Router>
+    </>
+  )
+}
 
 export default App
