@@ -6,23 +6,22 @@ const SelectPages = () => {
       <h2>
         What pages would you like?
       </h2>
-      <div className={classes.pageItem}>
-        <input type='checkbox' />
-        <h3>
-          About Me
-        </h3>
-      </div>
-      <div className={classes.pageItem}>
-        <input type='checkbox' />
-        <h3>
-          Resume
-        </h3>
-      </div>
-      <div className={classes.pageItem}>
-        <input type='checkbox' />
-        <h3>
-          Embedded Terminal
-        </h3>
+      <div className={classes.container}>
+        <label className={classes.pageItem}>
+          <input type='checkbox' onChange={(e) => console.log("HEY")}/>
+          <span className={classes.checkmark}/>
+          <span className={classes.pageLabel}>About Me</span>
+        </label>
+        <label className={classes.pageItem}>
+          <input type='checkbox' />
+          <span className={classes.checkmark}/>
+          <span className={classes.pageLabel}>Resume</span>
+        </label>
+        <label className={classes.pageItem}>
+          <input type='checkbox' />
+          <span className={classes.checkmark}/>
+          <span className={classes.pageLabel}>Embedded Terminal</span>
+        </label>
       </div>
     </>
   )
