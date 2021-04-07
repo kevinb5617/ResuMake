@@ -1,21 +1,16 @@
-import React from 'react';
+import classes from './Layout.module.css'
+import Toolbar from '../Navigation/Toolbar/Toolbar'
 
-import classes from './Layout.module.css';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
-
-class Layout extends React.Component{
-    clicked() {
-        alert("clicked");
+const Layout = () => {
+    const clicked = () => {
+        alert("clicked")
     }
-    render() {
-        return(
-            <React.Fragment>
-                <Toolbar/>
-                <button onClick={() => this.clicked("clicked") } className={classes.StartBtn}>get started</button>
-            </React.Fragment>
-        );
-    }
+    return (
+        <>
+            <Toolbar/>
+            <button onClick={() => clicked() } className={classes.StartBtn}>get started</button>
+        </>
+    )
+}
 
-};
-
-export default Layout;
+export default Layout
