@@ -1,4 +1,5 @@
 import classes from './SelectPages.module.css'
+import Button from '../Navigation/Button/Button'
 
 import { useState } from 'react'
 
@@ -35,6 +36,8 @@ const SelectPages = () => {
           <span className={classes.pageLabel}>Embedded Terminal</span>
         </label>
       </div>
+      <Button nextPage="aboutMe/" type="next" text="NEXT" />
+      <Button nextPage="/" type="back" text="BACK" />
     </>
   )
 }
