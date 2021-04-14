@@ -1,0 +1,24 @@
+name: ESLint
+
+defaults:
+  run:
+    working-directory: app
+
+# Controls when the action will run. 
+on: [push, pull_request]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run:
+          npm install eslint
+      - name: Run ESLint
+        run:
+          npx eslint .eslintrc.js .
