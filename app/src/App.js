@@ -1,15 +1,11 @@
+/* eslint-disable react/jsx-filename-extension */
 import './App.css'
 import Layout from './components/Layout/Layout'
 
-
-const App = () => {
-  return (
-    <div>
-      <Layout>
-        
-      </Layout>
-    </div>
-  )
-}
+const App = () => (
+  <div>
+    <Layout />
+  </div>
+)
 
 export default App
