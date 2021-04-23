@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import classes from './SelectPages.module.css'
+import Button from '../Navigation/Button/Button'
 
 const SelectPages = () => {
   const [aboutMe, setAboutMe] = useState(false)
@@ -34,6 +35,8 @@ const SelectPages = () => {
           <span className={classes.pageLabel}>Embedded Terminal</span>
         </label>
       </div>
+      <Button nextPage="aboutMe/" type="next" text="NEXT" />
+      <Button nextPage="/" type="back" text="BACK" />
     </>
   )
 }

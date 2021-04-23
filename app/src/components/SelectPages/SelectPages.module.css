@@ -33,7 +33,6 @@ h2 {
     -ms-user-select: none;
     user-select: none;
     width: -moz-fit-content;
-    width: fit-content;
 }
 
 .pageItem input {
