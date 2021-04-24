@@ -1,3 +1,5 @@
+![number of issues](https://img.shields.io/github/issues/kevinb5617/ResuMake) ![number of forks](https://img.shields.io/github/forks/kevinb5617/ResuMake) ![license](https://img.shields.io/github/license/kevinb5617/ResuMake) ![build status](https://img.shields.io/github/workflow/status/kevinb5617/ResuMake/ESLint)
+
 # ResuMake
 
 > A one-stop shop for creating your personal website
