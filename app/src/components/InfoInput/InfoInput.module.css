@@ -18,30 +18,22 @@ h2 {
     width: 95%;
 }
 
+.container input[type=text], textarea {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .pageLabel {
     display: inline-block;
 }
 
-.pageItem {
-    position: relative;
-    display: block;
-    padding-left: 35px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-
-.pageItem input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+.container textarea {
+  font-family: Oswald, sans-serif;
 }
 
 .SubmitBtn{

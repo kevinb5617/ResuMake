@@ -20,16 +20,25 @@ const InfoInput = () => (
       Fill in the following information.
     </h2>
     <form className={classes.container} id="about-me">
-      <span className={classes.pageLabel}>Name: </span>
-      <input type="text" name="name" />
+      <label htmlFor="name">
+        <span className={classes.pageLabel}>Name:</span>
+        <br />
+        <input type="text" name="name" placeholder="Enter your full name" />
+      </label>
       <br />
 
-      <span className={classes.pageLabel}>Title: </span>
-      <input type="text" name="title" />
+      <label htmlFor="title">
+        <span className={classes.pageLabel}>Title:</span>
+        <br />
+        <input type="text" name="title" placeholder="Enter your current title" />
+      </label>
       <br />
 
-      <span className={classes.pageLabel}>Bio: </span>
-      <textarea name="bio" />
+      <label htmlFor="bio">
+        <span className={classes.pageLabel}>Bio:</span>
+        <br />
+        <textarea name="bio" placeholder="Enter a short bio about yourself" />
+      </label>
       <br />
 
       <button type="button" className={classes.SubmitBtn}>
