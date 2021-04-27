@@ -22,3 +22,13 @@ jobs:
       - name: Run ESLint
         run:
           npx eslint .eslintrc.js . --ext .js,.jsx
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run:
+          npm install
+      - name: Run tests
+        run:
+          npm test
