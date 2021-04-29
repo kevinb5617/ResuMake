@@ -17,6 +17,16 @@ From there, we recommend setting up two "remotes", where one will point to your 
 $ git remote add upstream git@github.com:kevinb5617/ResuMake.git
 ```
 
+## Starting ResuMake
+
+After cloning the repository, use the following steps to start ResuMake
+
+`$ cd ResuMake/app`
+`$ npm install`
+`$ npm start`
+
+Visit `localhost:3000` to see ResuMake
+
 ## Common Workflow
 
 Typically, when developing, you will make changes locally on a new git branch, then when you want to "save" this changes, you will push to your fork of the repository, which is your "origin" remote. When you think your changes are ready to be merged into the blessed repository, you will make a pull request from your personal repository, to the blessed repository. Your workflow may look something like this.
@@ -52,3 +62,7 @@ For example:
     
     bugfix/remove-typo-in-headers
     feature/add-login-button
+    
+### Style Guide
+
+This repository follows style guidelines from the React plugin for ESLint [here](https://www.npmjs.com/package/eslint-plugin-react) and the airbnb guidelines [here](https://github.com/airbnb/javascript). There are slight modifications to these guidelines, which can be found in the ESLint config file [here](app/.eslintrc.js)
