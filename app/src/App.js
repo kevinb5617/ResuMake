@@ -5,6 +5,7 @@ import Homepage from './components/Homepage/Homepage'
 import Toolbar from './components/Navigation/Toolbar/Toolbar'
 import SelectPages from './components/SelectPages/SelectPages'
 import AboutMe from './components/AboutMe/AboutMe'
+import InfoInput from './components/InfoInput/InfoInput'
 
 const App = () => (
   <>
@@ -23,6 +24,8 @@ const App = () => (
         path="/about-me"
         exact
         component={AboutMe}
+        path="/info-input"
+        component={InfoInput}
       />
     </Router>
   </>

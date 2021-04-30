@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import classes from './SelectPages.module.css'
+import Button from '../Navigation/Button/Button'
 
 const SelectPages = () => {
   const [aboutMe, setAboutMe] = useState(false)
@@ -35,11 +36,8 @@ const SelectPages = () => {
           <span className={classes.pageLabel}>Embedded Terminal</span>
         </label>
       </div>
-      <Link to="/about-me">
-        <button type="button" className={classes.StartBtn}>
-          about me
-        </button>
-      </Link>
+      <Button nextPage="aboutMe/" type="next" text="NEXT" />
+      <Button nextPage="/" type="back" text="BACK" />
     </>
   )
 }

@@ -1,0 +1,22 @@
+.btn {
+    position: absolute;
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+}
+
+.next_btn {
+    background: #8458B3;
+    right: 20px;
+    bottom: 20px;
+}
+
+.back_btn {
+    background: #929193;
+    left: 20px;
+    bottom: 20px;
+}
