@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import classes from './SelectPages.module.css'
 
@@ -34,6 +35,11 @@ const SelectPages = () => {
           <span className={classes.pageLabel}>Embedded Terminal</span>
         </label>
       </div>
+      <Link to="/about-me">
+        <button type="button" className={classes.StartBtn}>
+          about me
+        </button>
+      </Link>
     </>
   )
 }
