@@ -24,6 +24,8 @@ const App = () => (
         path="/about-me"
         exact
         component={AboutMe}
+      />
+      <Route
         path="/info-input"
         component={InfoInput}
       />
