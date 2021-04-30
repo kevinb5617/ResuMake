@@ -1,4 +1,4 @@
-name: ESLint
+name: Build
 
 defaults:
   run:
@@ -10,7 +10,7 @@ on: [push, pull_request]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  lint:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
@@ -22,3 +22,13 @@ jobs:
       - name: Run ESLint
         run:
           npx eslint .eslintrc.js . --ext .js,.jsx
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run:
+          npm install
+      - name: Run tests
+        run:
+          npm test
