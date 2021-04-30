@@ -2,6 +2,11 @@ import { useState } from 'react'
 import classes from './SelectPages.module.css'
 import Button from '../Navigation/Button/Button'
 
+/**
+ * SelectPages is essentially a form that lets users decide
+ * what kind of pages they want in their website. It saves the choices
+ * in React state, to be forwarded to the page generation.
+ */
 const SelectPages = () => {
   const [aboutMe, setAboutMe] = useState(false)
   const [resume, setResume] = useState(false)

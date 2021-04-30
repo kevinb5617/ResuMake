@@ -4,6 +4,12 @@ import classes from './Button.module.css'
 const Button = ({ nextPage, type, text }) => {
   let returnLink
 
+  /**
+   * There are two main button types
+   *
+   * next: Used to navigate to the "next" page (move through info input pages)
+   * back: Used to navigate to the "previous" page
+   */
   switch (type) {
     case 'next':
       returnLink = (
