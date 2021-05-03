@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+.h2 {
+font-family: 'Open Sans', sans-serif;  
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 10px;
+}
+
+.column img {
+width: 250px;
+border: 5px solid #8458b3;
+}
+
+.column p {
+  margin: 5px;
+}
+
+.Name {
+font-family: 'Open Sans', sans-serif;  
+}
+
+.small {
+width: 30%;
+}
+
+.big {
+width: 70%;
+}
+
+.row {
+  width: 1000px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+width: 600px;
+}
+
+.AboutMe {
+padding-top: 50px;
+} 
