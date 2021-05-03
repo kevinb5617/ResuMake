@@ -35,7 +35,7 @@ const SelectPages = () => {
           <span className={classes.pageLabel}>Embedded Terminal</span>
         </label>
       </div>
-      <Button nextPage="aboutMe/" type="next" text="NEXT" />
+      <Button nextPage="/info-input/" type="next" text="NEXT" />
       <Button nextPage="/" type="back" text="BACK" />
     </>
   )
